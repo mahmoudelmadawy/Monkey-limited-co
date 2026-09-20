@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monkey Limited Co. — Structural & Canopy Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="20" r="19" fill="#FFC72C"/>
+          <path d="M20 6c-6 0-9 4-9 8 0 2 1 3 1 3s-3 1-3 5c0 5 5 8 11 8s11-3 11-8c0-4-3-5-3-5s1-1 1-3c0-4-3-8-9-8z" fill="#5B3A29"/>
+          <ellipse cx="20" cy="21" rx="6" ry="5" fill="#F2D9C4"/>
+          <circle cx="17.3" cy="19.5" r="1.4" fill="#3A2618"/>
+          <circle cx="22.7" cy="19.5" r="1.4" fill="#3A2618"/>
+        </svg>
+      </span>
+      Monkey Limited Co.
+    </a>
+    <nav class="main-nav">
+      <a href="#crew">The Crew</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="kicker">Est. by six very serious monkeys</p>
+      <h1>We build things a human wouldn't dare climb for.</h1>
+      <p class="hero-sub">
+        Monkey Limited Co. is a full-service structural, mechanical, and electrical
+        engineering firm, staffed entirely by monkeys, for jobs that live in the trees.
+        Every engineer wears one of three helmet colors on site &mdash; red, green,
+        or blue &mdash; so you always know who's in charge of what falling on you.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#crew">Meet the crew</a>
+        <a class="btn btn-ghost" href="#contact">Request a quote</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 320 340" width="100%" height="100%">
+        <!-- ground/branch -->
+        <rect x="0" y="300" width="320" height="18" rx="9" fill="#8B5E34"/>
+        <!-- tail -->
+        <path d="M235 260 C 275 250, 285 210, 265 190" stroke="#6B4226" stroke-width="14" fill="none" stroke-linecap="round"/>
+        <!-- body -->
+        <ellipse cx="160" cy="230" rx="70" ry="80" fill="#8B5E34"/>
+        <ellipse cx="160" cy="245" rx="42" ry="50" fill="#D9B589"/>
+        <!-- arms -->
+        <path d="M105 190 C 70 200, 55 250, 75 290" stroke="#8B5E34" stroke-width="22" fill="none" stroke-linecap="round"/>
+        <path d="M215 190 C 250 205, 250 240, 225 270" stroke="#8B5E34" stroke-width="22" fill="none" stroke-linecap="round"/>
+        <!-- wrench in hand -->
+        <g transform="translate(205,255) rotate(25)">
+          <rect x="-6" y="-38" width="12" height="46" rx="4" fill="#B8BEC7"/>
+          <circle cx="0" cy="-40" r="11" fill="none" stroke="#B8BEC7" stroke-width="7"/>
+        </g>
+        <!-- legs -->
+        <path d="M135 295 C 130 310, 125 300, 118 300" stroke="#8B5E34" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <path d="M185 295 C 190 310, 198 300, 205 300" stroke="#8B5E34" stroke-width="20" fill="none" stroke-linecap="round"/>
+        <!-- head -->
+        <circle cx="160" cy="150" r="58" fill="#8B5E34"/>
+        <ellipse cx="160" cy="160" rx="36" ry="32" fill="#D9B589"/>
+        <circle cx="113" cy="145" r="16" fill="#8B5E34"/>
+        <circle cx="207" cy="145" r="16" fill="#8B5E34"/>
+        <circle cx="113" cy="145" r="8" fill="#D9B589"/>
+        <circle cx="207" cy="145" r="8" fill="#D9B589"/>
+        <circle cx="145" cy="155" r="5" fill="#3A2618"/>
+        <circle cx="175" cy="155" r="5" fill="#3A2618"/>
+        <path d="M148 178 Q160 186 172 178" stroke="#3A2618" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="160" cy="170" rx="9" ry="6" fill="#C79A76"/>
+        <!-- hard hat -->
+        <path d="M112 128 A 48 40 0 0 1 208 128 Z" fill="#FFC72C"/>
+        <rect x="100" y="124" width="120" height="12" rx="6" fill="#FFC72C"/>
+        <rect x="152" y="86" width="16" height="10" rx="3" fill="#E3A800"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="crew" class="crew wrap">
+    <div class="section-head">
+      <h2>The crew on site today</h2>
+      <p>Filter by helmet color to see who's responsible for what.</p>
+    </div>
+
+    <div class="helmet-filter" role="group" aria-label="Filter crew by helmet color">
+      <button class="filter-btn is-active" data-filter="all">All helmets</button>
+      <button class="filter-btn" data-filter="red">Red &mdash; structural &amp; safety</button>
+      <button class="filter-btn" data-filter="green">Green &mdash; mechanical &amp; environmental</button>
+      <button class="filter-btn" data-filter="blue">Blue &mdash; electrical &amp; management</button>
+    </div>
+
+    <div id="crew-board" class="crew-board" aria-live="polite">
+      <p class="crew-loading">Loading the crew roster from the site office&hellip;</p>
+    </div>
+  </section>
+
+  <section id="work" class="work wrap">
+    <div class="section-head">
+      <h2>What we build</h2>
+      <p>Three disciplines. Three helmets. Zero humans on the scaffolding.</p>
+    </div>
+    <div class="work-grid">
+      <article class="work-card">
+        <span class="dot dot-red"></span>
+        <h3>Structural</h3>
+        <p>Canopy walkways, vine suspension bridges, and load calculations for engineers who insist on jumping on everything they build.</p>
+      </article>
+      <article class="work-card">
+        <span class="dot dot-green"></span>
+        <h3>Mechanical &amp; Environmental</h3>
+        <p>Pulley rigs, composting systems, and stormwater routing that keeps the whole treehouse district dry through monsoon season.</p>
+      </article>
+      <article class="work-card">
+        <span class="dot dot-blue"></span>
+        <h3>Electrical &amp; Project Management</h3>
+        <p>Low-voltage canopy lighting and the one monkey whose entire job is making sure everyone else shows up on time.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact wrap">
+    <div class="section-head">
+      <h2>Request a quote</h2>
+      <p>Tell us about your treehouse, and a monkey in a helmet will get back to you.</p>
+    </div>
+    <form id="contact-form" class="contact-form">
+      <div class="field-row">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+      </div>
+      <label>
+        What are we building?
+        <textarea name="body" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Send to the site office</button>
+      <p id="contact-status" class="contact-status" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>&copy; <span id="year"></span> Monkey Limited Co. Hard hats mandatory. Bananas provided.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
