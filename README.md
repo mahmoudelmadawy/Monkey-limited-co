@@ -43,6 +43,8 @@ monkey-limited-co/
    or 
 
    su - postgress
+   plsql
+   
 
    SQL COMMAND
    CREATE DATABASE monkey_limited_co;
