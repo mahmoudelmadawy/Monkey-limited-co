@@ -39,6 +39,13 @@ monkey-limited-co/
 2. **Create a Postgres database**
    ```bash
    createdb monkey_limited_co
+
+   or 
+
+   su - postgress
+
+   SQL COMMAND
+   CREATE DATABASE monkey_limited_co;
    ```
 
 3. **Configure environment variables**
